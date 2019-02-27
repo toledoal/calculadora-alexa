@@ -1,0 +1,24 @@
+{
+  "name": "calculadora-alexa",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/toledoal/calculadora-alexa.git"
+  },
+  "author": "Alejandro Toledo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/toledoal/calculadora-alexa/issues"
+  },
+  "homepage": "https://github.com/toledoal/calculadora-alexa#readme",
+  "dependencies": {
+    "ask-sdk-core": "^2.4.0",
+    "ask-sdk-model": "^1.11.2",
+    "aws-sdk": "^2.411.0"
+  }
+}
