@@ -34,6 +34,7 @@ const AddIntentHandler = {
             
             let result = parseInt(firstNumber) + parseInt(secondNumber);
             speechText = `${firstNumber} más ${secondNumber} es igual a ${result}.`;
+            displayText = 'El resultado de ' + speechText;
             
             return handlerInput.responseBuilder
                     .speak(speechText)
@@ -69,6 +70,7 @@ const SubstractIntentHandler = {
                 result = 'menos ' + Math.abs(result);
             }
             speechText = `${firstNumber} menos ${secondNumber} es igual a ${result}.`;
+             displayText = 'El resultado de ' + speechText;
             
             return handlerInput.responseBuilder
                     .speak(speechText)
@@ -101,6 +103,7 @@ const MultiplicationIntentHandler = {
             
             let result = parseInt(firstNumber) * parseInt(secondNumber);
             speechText = `${firstNumber} por ${secondNumber} es igual a ${result}.`;
+             displayText = 'El resultado de ' + speechText;
             
             return handlerInput.responseBuilder
                     .speak(speechText)
@@ -137,6 +140,7 @@ const DivisionIntentHandler = {
                result = result.toFixed(4)
             }
             speechText = `${firstNumber} entre ${secondNumber} es igual a ${result}.`;
+             displayText = 'El resultado de ' + speechText;
             
             return handlerInput.responseBuilder
                     .speak(speechText)
